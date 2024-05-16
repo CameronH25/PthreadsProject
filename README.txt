@@ -1,5 +1,3 @@
-BOO! (Hopefully the program is not as scary...)
-
 Mutex rationale:
     Mutual exclusion is, I think, ensured in my program as each shared resource (notably the conveyor belts and the associates countes for pizzas) are protected by mutexes. Further, when a pizza is being added to a conveyor belt, the "conveyorBeltThread" function locks the mutex. This prevents race conditions and ensures that the shared data is consistent. 
 
@@ -47,6 +45,3 @@ Notes:
     Within the conveyor.c file, within the runConveyorBelts function. 
     I thought it important to include this note since it impacts the functionality
     of the program. 
-
-Happy Halloween! 
-
